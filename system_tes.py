@@ -19,7 +19,7 @@ def get_processes_info():
 
 def main():
     processes_info = get_processes_info()
-    headers = ["Name", "PID", "CPU%", "Memory%", "UserName", "VMemory"]
+    headers = ["Name", "PID", "CPU%", "Memory%", "UserName",]
     print(tabulate(processes_info, headers=headers))
 
 if __name__ == "__main__":
