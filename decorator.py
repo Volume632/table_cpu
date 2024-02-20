@@ -1,11 +1,11 @@
 import os
 import psutil
 
-def write_to_file(system_tes.py):
+def write_to_file(system_tes):
     def decorator(func):
         def wrapper(*args, **kwargs):
             result = func(*args, **kwargs)
-            with open(system_tes.py, 'w') as file:
+            with open(system_tes, 'w') as file:
                 for process in result:
                     file.write(f"Name: {process['name']}\n")
                     file.write(f"PID: {process['pid']}\n")
